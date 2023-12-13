@@ -1,0 +1,7 @@
+# bert_gpt_arxiv_imdb
+# ckpts
+/bert_gpt_arxiv_imdb/ckpts/
+/bert_gpt_arxiv_imdb/Protoformer
+bert_gpt_arxiv_imdb/gpt2_arxiv_encoding
+bert_gpt_arxiv_imdb/runs
+bert_gpt_arxiv_imdb/terminal_outputs
