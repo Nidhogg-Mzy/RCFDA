@@ -1,7 +1,7 @@
 # bert_gpt_arxiv_imdb
 # ckpts
-/bert_gpt_arxiv_imdb/ckpts/
-/bert_gpt_arxiv_imdb/Protoformer
-bert_gpt_arxiv_imdb/gpt2_arxiv_encoding
-bert_gpt_arxiv_imdb/runs
-bert_gpt_arxiv_imdb/terminal_outputs
+/gpt2_finetune/ckpts/
+/gpt2_finetune/Protoformer
+gpt2_finetune/gpt2_arxiv_encoding
+gpt2_finetune/runs
+gpt2_finetune/terminal_outputs
