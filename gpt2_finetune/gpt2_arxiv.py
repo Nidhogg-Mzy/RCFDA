@@ -21,7 +21,6 @@ from transformers import GPT2ForSequenceClassification, GPT2Config, get_linear_s
 import datetime
 import os
 import datetime
-import os
 from torch.utils.tensorboard import SummaryWriter# Create an instance of the object 
 
 
@@ -35,7 +34,7 @@ writer = SummaryWriter(log_dir=f'{current_dir}/runs/gpt2_arxiv')
 
 # outputs file name:
 current_time = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-outputs_file_name = f"outputs/{current_time}.txt"
+file_name = f'{current_dir}/terminal_outputs/{current_time}.txt'
 outputs_file_content = ""
 
 
@@ -46,7 +45,6 @@ hf_models_cache_dir = '/data/clhuang/huggingface_cache/models'
 hf_tokenizer_cache_dir='/data/clhuang/huggingface_cache/tokenizers'
 batch_size = 8
 max_length = 512
-file_name = f'{current_dir}/terminal_outputs/{current_time}.txt'
 
 def print_and_store(current_file_content):
 	global outputs_file_content 
