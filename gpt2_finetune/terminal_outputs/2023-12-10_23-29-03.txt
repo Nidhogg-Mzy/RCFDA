@@ -1,0 +1,27 @@
+
+<torch.utils.data.dataloader.DataLoader object at 0x7fc2c786ca90>
+Created `train_dataloader` with 11250 batches!
+the device is: cuda
+======== TRAINING ====================
+epoch1  loss = 0.10835672745009263
+epoch1  accuracy = 0.7856555555555556
+epoch2  loss = 0.07046250298532761
+epoch2  accuracy = 0.8679
+epoch3  loss = 0.04608017649667733
+epoch3  accuracy = 0.9213888888888889
+epoch4  loss = 0.02252317674301093
+epoch4  accuracy = 0.9659222222222222
+epoch5  loss = 0.010075122444750692
+epoch5  accuracy = 0.9862888888888889
+epoch6  loss = 0.004032366944800522
+epoch6  accuracy = 0.9947333333333334
+epoch7  loss = 0.001741195861996616
+epoch7  accuracy = 0.9977333333333334
+epoch8  loss = 0.0007502659175164607
+epoch8  accuracy = 0.9989777777777777
+epoch9  loss = 0.00018279049257592474
+epoch9  accuracy = 0.9997777777777778
+epoch10  loss = 5.359057028022889e-05
+epoch10  accuracy = 0.9999555555555556
+======== TESTING ====================
+Testing accuracy = 0.8502
