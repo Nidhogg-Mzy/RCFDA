@@ -1,0 +1,44 @@
+
+the device is: cuda
+trainable params BEFORE setting classifier to be trainable: 296448 || all params: 124737792 || trainable%: 0.2376569244
+trainable params AFTER setting classifier to be trainable: 297984 || all params: 124737792 || trainable%: 0.2388883074
+======== epoch1 ====================
+epoch1  training loss = 0.8197433259040212
+epoch1  training accuracy = 0.53752
+epoch1  testing accuracy = 0.61212
+======== epoch2 ====================
+epoch2  training loss = 0.6338168030279383
+epoch2  training accuracy = 0.65832
+epoch2  testing accuracy = 0.7654
+======== epoch3 ====================
+epoch3  training loss = 0.4344979962065902
+epoch3  training accuracy = 0.80148
+epoch3  testing accuracy = 0.86408
+======== epoch4 ====================
+epoch4  training loss = 0.3216164232811444
+epoch4  training accuracy = 0.86784
+epoch4  testing accuracy = 0.88904
+======== epoch5 ====================
+epoch5  training loss = 0.28641141336637665
+epoch5  training accuracy = 0.88364
+epoch5  testing accuracy = 0.89988
+======== epoch6 ====================
+epoch6  training loss = 0.2685101280609767
+epoch6  training accuracy = 0.8918
+epoch6  testing accuracy = 0.90644
+======== epoch7 ====================
+epoch7  training loss = 0.2567365551504449
+epoch7  training accuracy = 0.89828
+epoch7  testing accuracy = 0.91112
+======== epoch8 ====================
+epoch8  training loss = 0.24781424275486805
+epoch8  training accuracy = 0.9008
+epoch8  testing accuracy = 0.91356
+======== epoch9 ====================
+epoch9  training loss = 0.24376292938458294
+epoch9  training accuracy = 0.90356
+epoch9  testing accuracy = 0.9154
+======== epoch10 ====================
+epoch10  training loss = 0.2335693056117779
+epoch10  training accuracy = 0.90696
+epoch10  testing accuracy = 0.91628
