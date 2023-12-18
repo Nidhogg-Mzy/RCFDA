@@ -3,7 +3,8 @@ Reducing Catastrophic Forgetting for Domain Adaptation in Multi-choice Q&amp;A
 
 ## Dataset
 
-The exams-qa datset an be found [here](https://github.com/mhardalov/exams-qa).
+The exams-qa dataset can be found [here](https://github.com/mhardalov/exams-qa).
+The arXiv-10 dataset can be found [here](https://paperswithcode.com/dataset/arxiv-10).
 
 
 
