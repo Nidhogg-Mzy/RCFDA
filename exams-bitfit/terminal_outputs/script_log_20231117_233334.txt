@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/data/clhuang/5212/exams-qa-new-version/./scripts/experiments/run_multiple_choice.py", line 27, in <module>
+    import torch
+  File "/data/clhuang/anaconda3/envs/exams_env3/lib/python3.11/site-packages/torch/__init__.py", line 228, in <module>
+    _load_global_deps()
+  File "/data/clhuang/anaconda3/envs/exams_env3/lib/python3.11/site-packages/torch/__init__.py", line 168, in _load_global_deps
+    ctypes.CDLL(lib_path, mode=ctypes.RTLD_GLOBAL)
+  File "/data/clhuang/anaconda3/envs/exams_env3/lib/python3.11/ctypes/__init__.py", line 376, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

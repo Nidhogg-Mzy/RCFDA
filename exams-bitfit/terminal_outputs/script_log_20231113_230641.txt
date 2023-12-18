@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "./scripts/experiments/run_multiple_choice.py", line 921, in <module>
+    main()
+  File "./scripts/experiments/run_multiple_choice.py", line 729, in main
+    args.output_dir
+ValueError: Output directory (/data/clhuang/5212/exams-qa/outputs) already exists and is not empty. Use --overwrite_output_dir to overcome.

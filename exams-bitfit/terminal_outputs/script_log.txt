@@ -1,0 +1,143 @@
+11/13/2023 23:02:13 - WARNING - __main__ -   Process rank: -1, device: cuda, n_gpu: 8, distributed training: False, 16-bits training: False
+11/13/2023 23:02:14 - INFO - transformers.configuration_utils -   loading configuration file /data/clhuang/5212/exams-qa/model/config.json
+11/13/2023 23:02:14 - INFO - transformers.configuration_utils -   Model config BertConfig {
+  "_name_or_path": "bert-base-uncased",
+  "_num_labels": 6,
+  "architectures": [
+    "BertModel"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bad_words_ids": null,
+  "bos_token_id": null,
+  "classifier_dropout": null,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "eos_token_id": null,
+  "finetuning_task": "exams",
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2",
+    "3": "LABEL_3",
+    "4": "LABEL_4",
+    "5": "LABEL_5"
+  },
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_2": 2,
+    "LABEL_3": 3,
+    "LABEL_4": 4,
+    "LABEL_5": 5
+  },
+  "layer_norm_eps": 1e-12,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "max_position_embeddings": 512,
+  "min_length": 0,
+  "model_type": "bert",
+  "no_repeat_ngram_size": 0,
+  "num_attention_heads": 12,
+  "num_beams": 1,
+  "num_hidden_layers": 12,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "task_specific_params": null,
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torch_dtype": "float32",
+  "torchscript": false,
+  "transformers_version": "4.34.1",
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "use_cache": true,
+  "vocab_size": 30522
+}
+
+11/13/2023 23:02:14 - INFO - transformers.tokenization_utils -   Model name '/data/clhuang/5212/exams-qa/model' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased, bert-base-finnish-cased-v1, bert-base-finnish-uncased-v1, bert-base-dutch-cased). Assuming '/data/clhuang/5212/exams-qa/model' is a path, a model identifier, or url to a directory containing tokenizer files.
+11/13/2023 23:02:14 - INFO - transformers.tokenization_utils -   Didn't find file /data/clhuang/5212/exams-qa/model/added_tokens.json. We won't load it.
+11/13/2023 23:02:14 - INFO - transformers.tokenization_utils -   loading file /data/clhuang/5212/exams-qa/model/vocab.txt
+11/13/2023 23:02:14 - INFO - transformers.tokenization_utils -   loading file None
+11/13/2023 23:02:14 - INFO - transformers.tokenization_utils -   loading file /data/clhuang/5212/exams-qa/model/special_tokens_map.json
+11/13/2023 23:02:14 - INFO - transformers.tokenization_utils -   loading file /data/clhuang/5212/exams-qa/model/tokenizer_config.json
+11/13/2023 23:02:14 - INFO - transformers.modeling_utils -   loading weights file /data/clhuang/5212/exams-qa/model/pytorch_model.bin
+11/13/2023 23:02:18 - INFO - transformers.modeling_utils -   Weights of BertForMultipleChoice not initialized from pretrained model: ['classifier.weight', 'classifier.bias']
+11/13/2023 23:02:18 - INFO - root -   Arg Options:
+11/13/2023 23:02:18 - INFO - root -   opt: data_dir=./data/exams/multilingual
+opt: model_type=bert
+opt: model_name_or_path=/data/clhuang/5212/exams-qa/model
+opt: task_name=exams
+opt: para_type=per_choice
+opt: output_predictions=True
+opt: output_dir=/data/clhuang/5212/exams-qa/outputs
+opt: freeze_embeddings=False
+opt: freeze_layers=None
+opt: tb_log_dir=runs/tensorboard/bert20231109
+opt: config_name=
+opt: tokenizer_name=
+opt: cache_dir=/data/clhuang/5212/exams-qa/cache_dir
+opt: max_seq_length=128
+opt: do_train=True
+opt: do_eval=True
+opt: do_test=False
+opt: evaluate_during_training=True
+opt: do_lower_case=False
+opt: per_gpu_train_batch_size=8
+opt: per_gpu_eval_batch_size=8
+opt: gradient_accumulation_steps=1
+opt: learning_rate=5e-05
+opt: weight_decay=0.0
+opt: adam_epsilon=1e-08
+opt: max_grad_norm=1.0
+opt: num_train_epochs=4.0
+opt: max_steps=-1
+opt: warmup_proportion=0.0
+opt: logging_steps=500
+opt: save_steps=500
+opt: eval_all_checkpoints=False
+opt: no_cuda=False
+opt: overwrite_output_dir=False
+opt: overwrite_cache=False
+opt: seed=42
+opt: fp16=False
+opt: fp16_opt_level=O1
+opt: local_rank=-1
+opt: server_ip=
+opt: server_port=
+opt: n_gpu=8
+opt: device=cuda
+
+/data/clhuang/anaconda3/envs/exams_env/lib/python3.6/site-packages/torch/cuda/__init__.py:125: UserWarning: 
+NVIDIA GeForce RTX 3090 with CUDA capability sm_86 is not compatible with the current PyTorch installation.
+The current PyTorch install supports CUDA capabilities sm_37 sm_50 sm_60 sm_70 sm_75.
+If you want to use the NVIDIA GeForce RTX 3090 GPU with PyTorch, please check the instructions at https://pytorch.org/get-started/locally/
+
+  warnings.warn(incompatible_device_warn.format(device_name, capability, " ".join(arch_list), device_name))
+11/13/2023 23:02:19 - INFO - __main__ -   Training/evaluation parameters Namespace(adam_epsilon=1e-08, cache_dir='/data/clhuang/5212/exams-qa/cache_dir', config_name='', data_dir='./data/exams/multilingual', device=device(type='cuda'), do_eval=True, do_lower_case=False, do_test=False, do_train=True, eval_all_checkpoints=False, evaluate_during_training=True, fp16=False, fp16_opt_level='O1', freeze_embeddings=False, freeze_layers=None, gradient_accumulation_steps=1, learning_rate=5e-05, local_rank=-1, logging_steps=500, max_grad_norm=1.0, max_seq_length=128, max_steps=-1, model_name_or_path='/data/clhuang/5212/exams-qa/model', model_type='bert', n_gpu=8, no_cuda=False, num_train_epochs=4.0, output_dir='/data/clhuang/5212/exams-qa/outputs', output_predictions=True, overwrite_cache=False, overwrite_output_dir=False, para_type='per_choice', per_gpu_eval_batch_size=8, per_gpu_train_batch_size=8, save_steps=500, seed=42, server_ip='', server_port='', task_name='exams', tb_log_dir='runs/tensorboard/bert20231109', tokenizer_name='', warmup_proportion=0.0, weight_decay=0.0)
+11/13/2023 23:02:19 - INFO - __main__ -   Loading features from cached file ./data/exams/multilingual/cached_train_exams-qa__model_128_exams
+args.tb_log_dir: runs/tensorboard/bert20231109
+Traceback (most recent call last):
+  File "./scripts/experiments/run_multiple_choice.py", line 921, in <module>
+    main()
+  File "./scripts/experiments/run_multiple_choice.py", line 852, in main
+    global_step, tr_loss, best_steps = train(args, train_dataset, model, tokenizer)
+  File "./scripts/experiments/run_multiple_choice.py", line 110, in train
+    tb_writer = SummaryWriter(logdir=args.tb_log_dir)
+TypeError: __init__() got an unexpected keyword argument 'logdir'

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/data/clhuang/5212/BitFit_folder/bitfit-exam-1218-from-exam/./scripts/experiments/run_multiple_choice.py", line 80, in <module>
+    ALL_MODELS = sum(
+                 ^^^^
+  File "/data/clhuang/5212/BitFit_folder/bitfit-exam-1218-from-exam/./scripts/experiments/run_multiple_choice.py", line 82, in <genexpr>
+    tuple(conf.pretrained_config_archive_map.keys())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'BertConfig' has no attribute 'pretrained_config_archive_map'

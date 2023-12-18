@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "./scripts/experiments/run_multiple_choice.py", line 76, in <module>
+    (),
+  File "./scripts/experiments/run_multiple_choice.py", line 74, in <genexpr>
+    for conf in (BertConfig, XLNetConfig, RobertaConfig)
+AttributeError: type object 'BertConfig' has no attribute 'pretrained_config_archive_map'

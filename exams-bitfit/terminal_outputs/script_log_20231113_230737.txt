@@ -1,0 +1,105 @@
+11/13/2023 23:07:39 - WARNING - __main__ -   Process rank: -1, device: cuda, n_gpu: 8, distributed training: False, 16-bits training: False
+11/13/2023 23:07:39 - INFO - transformers.configuration_utils -   loading configuration file /data/clhuang/5212/exams-qa/model/config.json
+11/13/2023 23:07:39 - INFO - transformers.configuration_utils -   Model config BertConfig {
+  "_name_or_path": "bert-base-uncased",
+  "_num_labels": 6,
+  "architectures": [
+    "BertModel"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bad_words_ids": null,
+  "bos_token_id": null,
+  "classifier_dropout": null,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "eos_token_id": null,
+  "finetuning_task": "exams",
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2",
+    "3": "LABEL_3",
+    "4": "LABEL_4",
+    "5": "LABEL_5"
+  },
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_2": 2,
+    "LABEL_3": 3,
+    "LABEL_4": 4,
+    "LABEL_5": 5
+  },
+  "layer_norm_eps": 1e-12,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "max_position_embeddings": 512,
+  "min_length": 0,
+  "model_type": "bert",
+  "no_repeat_ngram_size": 0,
+  "num_attention_heads": 12,
+  "num_beams": 1,
+  "num_hidden_layers": 12,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "task_specific_params": null,
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torch_dtype": "float32",
+  "torchscript": false,
+  "transformers_version": "4.34.1",
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "use_cache": true,
+  "vocab_size": 30522
+}
+
+11/13/2023 23:07:39 - INFO - transformers.tokenization_utils -   Model name '/data/clhuang/5212/exams-qa/model' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased, bert-base-finnish-cased-v1, bert-base-finnish-uncased-v1, bert-base-dutch-cased). Assuming '/data/clhuang/5212/exams-qa/model' is a path, a model identifier, or url to a directory containing tokenizer files.
+11/13/2023 23:07:39 - INFO - transformers.tokenization_utils -   Didn't find file /data/clhuang/5212/exams-qa/model/added_tokens.json. We won't load it.
+11/13/2023 23:07:39 - INFO - transformers.tokenization_utils -   loading file /data/clhuang/5212/exams-qa/model/vocab.txt
+11/13/2023 23:07:39 - INFO - transformers.tokenization_utils -   loading file None
+11/13/2023 23:07:39 - INFO - transformers.tokenization_utils -   loading file /data/clhuang/5212/exams-qa/model/special_tokens_map.json
+11/13/2023 23:07:39 - INFO - transformers.tokenization_utils -   loading file /data/clhuang/5212/exams-qa/model/tokenizer_config.json
+11/13/2023 23:07:39 - INFO - transformers.modeling_utils -   loading weights file /data/clhuang/5212/exams-qa/model/pytorch_model.bin
+Traceback (most recent call last):
+  File "./scripts/experiments/run_multiple_choice.py", line 921, in <module>
+    main()
+  File "./scripts/experiments/run_multiple_choice.py", line 809, in main
+    cache_dir=args.cache_dir if args.cache_dir else None,
+  File "/data/clhuang/anaconda3/envs/exams_env/lib/python3.6/site-packages/transformers/modeling_utils.py", line 512, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+  File "/data/clhuang/anaconda3/envs/exams_env/lib/python3.6/site-packages/transformers/modeling_bert.py", line 1208, in __init__
+    self.bert = BertModel(config)
+  File "/data/clhuang/anaconda3/envs/exams_env/lib/python3.6/site-packages/transformers/modeling_bert.py", line 619, in __init__
+    self.init_weights()
+  File "/data/clhuang/anaconda3/envs/exams_env/lib/python3.6/site-packages/transformers/modeling_utils.py", line 299, in init_weights
+    self.apply(self._init_weights)
+  File "/data/clhuang/anaconda3/envs/exams_env/lib/python3.6/site-packages/torch/nn/modules/module.py", line 440, in apply
+    module.apply(fn)
+  File "/data/clhuang/anaconda3/envs/exams_env/lib/python3.6/site-packages/torch/nn/modules/module.py", line 440, in apply
+    module.apply(fn)
+  File "/data/clhuang/anaconda3/envs/exams_env/lib/python3.6/site-packages/torch/nn/modules/module.py", line 440, in apply
+    module.apply(fn)
+  [Previous line repeated 2 more times]
+  File "/data/clhuang/anaconda3/envs/exams_env/lib/python3.6/site-packages/torch/nn/modules/module.py", line 441, in apply
+    fn(self)
+  File "/data/clhuang/anaconda3/envs/exams_env/lib/python3.6/site-packages/transformers/modeling_bert.py", line 525, in _init_weights
+    module.weight.data.normal_(mean=0.0, std=self.config.initializer_range)
+KeyboardInterrupt

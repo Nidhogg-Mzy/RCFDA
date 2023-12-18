@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "./scripts/experiments/run_multiple_choice.py", line 64, in <module>
+    from torch.utils.tensorboard import SummaryWriter
+  File "/data/clhuang/anaconda3/envs/bitfit_env/lib/python3.7/site-packages/torch/utils/tensorboard/__init__.py", line 1, in <module>
+    import tensorboard
+ModuleNotFoundError: No module named 'tensorboard'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./scripts/experiments/run_multiple_choice.py", line 66, in <module>
+    from tensorboardX import SummaryWriter
+ModuleNotFoundError: No module named 'tensorboardX'
