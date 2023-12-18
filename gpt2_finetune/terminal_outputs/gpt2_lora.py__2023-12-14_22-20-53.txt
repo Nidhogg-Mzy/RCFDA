@@ -1,0 +1,4 @@
+
+the device is: cuda
+trainable params BEFORE setting classifier to be trainable: 296448 || all params: 124737792 || trainable%: 0.2376569244
+trainable params AFTER setting classifier to be trainable: 297984 || all params: 124737792 || trainable%: 0.2388883074
